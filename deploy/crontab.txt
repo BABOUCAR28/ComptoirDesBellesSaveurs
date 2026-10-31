@@ -1,0 +1,2 @@
+# Sauvegarde quotidienne (crontab -e) :
+0 3 * * * cd /opt/comptoir && DATA_DIR=/opt/comptoir/data node scripts/backup.js /var/backups/comptoir

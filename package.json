@@ -1,0 +1,1 @@
+{"name":"comptoir-des-belles-saveurs","version":"1.0.0","private":true,"description":"Site du Comptoir des Belles Saveurs","scripts":{"start":"node --no-warnings --experimental-sqlite server.js","test":"node --no-warnings --experimental-sqlite tests/smoke.js"},"engines":{"node":">=22.5"}}

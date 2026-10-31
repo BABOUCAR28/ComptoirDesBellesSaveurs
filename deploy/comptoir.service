@@ -1,0 +1,12 @@
+# /etc/systemd/system/comptoir.service  puis : systemctl enable --now comptoir
+[Unit]
+Description=Le Comptoir des Belles Saveurs
+After=network.target
+[Service]
+WorkingDirectory=/opt/comptoir
+ExecStart=/usr/bin/node --no-warnings --experimental-sqlite server.js
+Restart=always
+User=comptoir
+Environment=NODE_ENV=production
+[Install]
+WantedBy=multi-user.target
